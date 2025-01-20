@@ -90,32 +90,34 @@
 <body>
     <button id="button-top"><span class="icon-arrow-up"></span></button>
     <div class="popup popup-log" data-popup="log">
-        <div class="popup__body">
-            <div class="popup__content">
-                <div class="popup__close"><span class="cross"></span></div>
-                <div class="popup__title"><p>Log in</p></div>
-                <form class="popup__form" action="dash.html">
-                    <div class="form__subtitle"><p>Enter your email address to login</p></div>
-                    <div class="form__input">
-                        <input class="input__field" id="input-log__username" type="text" name="username" placeholder=" " required />
-                        <label class="input__label" for="input-log__username">Username</label>
+    <div class="popup__body">
+        <div class="popup__content">
+            <div class="popup__close"><span class="cross"></span></div>
+            <div class="popup__title"><p>Log in</p></div>
+            <form class="popup__form" action="dash.html" method="POST">
+                <div class="form__subtitle"><p>Enter your email address to login</p></div>
+                <div class="form__input">
+                    <input class="input__field" id="input-log__username" type="text" name="username" placeholder=" " required />
+                    <label class="input__label" for="input-log__username">Username</label>
+                </div>
+                <div class="form__input form__input-password">
+                    <input class="input__field" id="input-log__password" type="password" name="password" placeholder=" " required />
+                    <label class="input__label" for="input-log__password">Password</label>
+                </div>
+                <div class="form__row-box">
+                    <div class="form__remember">
+                        <input class="remember__input" type="checkbox" name="remember" id="remember" />
+                        <label class="remember__label" for="remember">Remember me</label>
                     </div>
-                    <div class="form__input form__input-password">
-                        <input class="input__field" id="input-log__password" type="password" name="password" placeholder=" " required />
-                        <label class="input__label" for="input-log__password">Password</label>
-                    </div>
-                    <div class="form__row-box">
-                        <div class="form__remember">
-                            <input class="remember__input" type="checkbox" name="remember" id="remember" />
-                            <label class="remember__label" for="remember">Remember me</label>
-                        </div>
-                        <div class="form__forgot"><a href="##">Forgot your password?</a></div>
-                    </div>
-                    <div class="form__btn"><button class="btn-form button button--style-1" type="submit">Login</button></div>
-                </form>
-            </div>
+                    <div class="form__forgot"><a href="##">Forgot your password?</a></div>
+                </div>
+                <div class="form__btn">
+                    <button class="btn-form button button--style-1" type="submit">Login</button>
+                </div>
+            </form>
         </div>
     </div>
+</div>
     <div class="popup popup-reg" data-popup="reg">
         <div class="popup__body">
             <div class="popup__content">
